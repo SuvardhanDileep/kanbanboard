@@ -62,9 +62,9 @@ const NavBar = () => {
           onClick={() => setDisplayOnClick(!displayOnClick)}
         >
           {" "}
-          {/* <TiThList /> Display */}
-          <img src={threedotmenu} alt="3 dot menu"/>
-          Display
+          <TiThList /> Display
+          {/* <img src={threedotmenu} alt="3 dot menu"/>
+           Display */}
         </button>
         {displayOnClick && (
           <>
