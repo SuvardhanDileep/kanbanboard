@@ -4,28 +4,16 @@ import "./NavBar.css";
 import { useSelector, useDispatch } from "react-redux";
 import { selectData } from "../../Redux/DataAction";
 
-localStorage.setItem("group", "status");
-localStorage.setItem("order", "priority");
-const getOrder = () => {
-  if (localStorage.getItem("order")) {
-    return localStorage.getItem("order");
-  } else {
-    return "priority";
-  }
-};
-const getGroup = () => {
-  if (localStorage.getItem("group")) {
-    return localStorage.getItem("group");
-  } else {
-    return "status";
-  }
-};
+const getOrder = () => localStorage.getItem("order") || "priority";
+const getGroup = () => localStorage.getItem("group") || "status";
+
 const NavBar = () => {
   const [displayOnClick, setDisplayOnClick] = useState(false);
   const dispatch = useDispatch();
   const { allTickets, allUser } = useSelector((state) => state.DataReducer);
   const [groupValue, setGroupValue] = useState(getGroup());
   const [orderValue, setOrderValue] = useState(getOrder());
+
   const handleGroupValue = (e, valueBool) => {
     if (valueBool) {
       setGroupValue(e.target.value);
@@ -37,23 +25,16 @@ const NavBar = () => {
       localStorage.setItem("order", e.target.value);
     }
   };
+
   useEffect(() => {
     if (groupValue === "user") {
-      dispatch(
-        selectData(
-          groupValue,
-          {
-            allTickets,
-            allUser,
-          },
-          orderValue
-        )
-      );
+      dispatch(selectData(groupValue, { allTickets, allUser }, orderValue));
     } else {
       dispatch(selectData(groupValue, allTickets, orderValue));
     }
   }, [allTickets, dispatch, groupValue, allUser, orderValue]);
-  return (
+
+return (
     <div className="top-header" style={{ paddingLeft: "13px" }}>
       <div className="displayButton">
         <button
