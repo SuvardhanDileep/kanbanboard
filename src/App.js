@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import DashBoard from './components/DashBoard/DashBoard';
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchAllData } from './DataManipulate/DataAction';
+import { fetchAllData } from './Redux/DataAction';
 const App = () => {
   const dispatch = useDispatch();
   const { allTickets } = useSelector(state => state.DataReducer);

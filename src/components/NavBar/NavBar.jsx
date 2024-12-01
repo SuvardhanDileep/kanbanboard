@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import down from "../../assets/down.svg";
 import "./NavBar.css";
 import { useSelector, useDispatch } from "react-redux";
-import { selectData } from "../../DataManipulate/DataAction";
+import { selectData } from "../../Redux/DataAction";
 
 localStorage.setItem("group", "status");
 localStorage.setItem("order", "priority");
