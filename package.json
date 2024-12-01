@@ -1,6 +1,6 @@
 {
-  "name": "quicksell",
-  "homepage": "https://SuvardhanDileep.github.io/kanboard",
+  "name": "Suvardhan Dileep QuickSell",
+  "homepage": "https://SuvardhanDileep.github.io/kanbanboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
