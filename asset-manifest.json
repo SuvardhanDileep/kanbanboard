@@ -1,19 +1,24 @@
 {
   "files": {
     "main.css": "/kanbanboard/static/css/main.99fe7aaf.css",
-    "main.js": "/kanbanboard/static/js/main.92f88bd6.js",
+    "main.js": "/kanbanboard/static/js/main.c43b0108.js",
+    "static/media/Display.svg": "/kanbanboard/static/media/Display.0168095040354204011b596e30abf32e.svg",
+    "static/media/Cancelled.svg": "/kanbanboard/static/media/Cancelled.360749f102ea2ac68b5841e9f9ff29dd.svg",
+    "static/media/3 dot menu.svg": "/kanbanboard/static/media/3 dot menu.4caedb468f68b915626e0e35045257b3.svg",
     "static/media/No-priority.svg": "/kanbanboard/static/media/No-priority.7218b139313728c6a4efa8da6e34852b.svg",
     "static/media/Done.svg": "/kanbanboard/static/media/Done.a5158827c6345b2f141ff681c57cb3ac.svg",
     "static/media/down.svg": "/kanbanboard/static/media/down.b19d146ddbaad572f0f5cebb6dbdf766.svg",
     "index.html": "/kanbanboard/index.html",
+    "static/media/add.svg": "/kanbanboard/static/media/add.f84a7335f3fac0026df6cafc2489b65d.svg",
     "static/media/in-progress.svg": "/kanbanboard/static/media/in-progress.d4beb72fbc94f765259fc46ecaba9779.svg",
     "static/media/SVG - Urgent Priority colour.svg": "/kanbanboard/static/media/SVG - Urgent Priority colour.9b67f75d5459d4d66573ef9f8e6f6841.svg",
+    "static/media/Backlog.svg": "/kanbanboard/static/media/Backlog.97adf3356b7d2e775ef530f7aed206e0.svg",
     "static/media/To-do.svg": "/kanbanboard/static/media/To-do.c01d92afcffeef58b2cd9ae080df1f58.svg",
     "main.99fe7aaf.css.map": "/kanbanboard/static/css/main.99fe7aaf.css.map",
-    "main.92f88bd6.js.map": "/kanbanboard/static/js/main.92f88bd6.js.map"
+    "main.c43b0108.js.map": "/kanbanboard/static/js/main.c43b0108.js.map"
   },
   "entrypoints": [
     "static/css/main.99fe7aaf.css",
-    "static/js/main.92f88bd6.js"
+    "static/js/main.c43b0108.js"
   ]
 }
